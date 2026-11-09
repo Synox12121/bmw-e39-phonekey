@@ -1,0 +1,26 @@
+name: BMWPhoneKey
+options:
+  bundleIdPrefix: com.bmwe39.test
+settings:
+  base:
+    IPHONEOS_DEPLOYMENT_TARGET: '16.0'
+    SWIFT_VERSION: '5.0'
+targets:
+  BMWPhoneKey:
+    type: application
+    platform: iOS
+    sources:
+      - Sources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.bmwe39.test.phonekey
+        TARGETED_DEVICE_FAMILY: '1'
+        CODE_SIGNING_ALLOWED: NO
+    info:
+      path: GeneratedInfo.plist
+      properties:
+        CFBundleDisplayName: BMW E39 Phone Key
+        NSBluetoothAlwaysUsageDescription: BMW E39 test cihazina Bluetooth ile baglanmak icin Bluetooth izni gerekir.
+        UIBackgroundModes:
+          - bluetooth-central
+        UILaunchScreen: {}
